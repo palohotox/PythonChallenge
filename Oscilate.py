@@ -4,9 +4,11 @@ from array import *
 def rotate_arr(myarray):
 
     lastel = myarray[-1]
+    #insert last element to first position
     myarray.insert(0, lastel)
 
     myarray1 = myarray
+    #remove last element of the new array
     myarray1.pop(len(myarray1)-1)
     myarray2=myarray1
 
