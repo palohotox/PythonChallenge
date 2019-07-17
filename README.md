@@ -1,5 +1,5 @@
 # PythonChallenge
-#1 
+Challenge #1 
 Task description
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
@@ -21,7 +21,7 @@ Sample code in Tutorial.py
 
 
 
-#2
+Challenge #2
 
 A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.
 
@@ -56,7 +56,7 @@ all but one of the values in A occur an even number of times.
 Sample Code in Array in ArrayElements.py
 
 
-#3
+Challenge no #3
 
 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
 
@@ -97,3 +97,49 @@ In your solution, focus on correctness. The performance of your solution will no
 
 Solution - cyclicrotation.py
 
+
+Challenge # 4
+A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface of the river.
+
+You are given an array A consisting of N integers representing the falling leaves. A[K] represents the position where one leaf falls at time K, measured in seconds.
+
+The goal is to find the earliest time when the frog can jump to the other side of the river. The frog can cross only when leaves appear at every position across the river from 1 to X (that is, we want to find the earliest moment when all the positions from 1 to X are covered by leaves). You may assume that the speed of the current in the river is negligibly small, i.e. the leaves do not change their positions once they fall in the river.
+
+For example, you are given integer X = 5 and array A such that:
+
+  A[0] = 1
+  A[1] = 3
+  A[2] = 1
+  A[3] = 4
+  A[4] = 2
+  A[5] = 3
+  A[6] = 5
+  A[7] = 4
+In second 6, a leaf falls into position 5. This is the earliest time when leaves appear in every position across the river.
+
+Write a function:
+
+def solution(X, A)
+
+that, given a non-empty array A consisting of N integers and integer X, returns the earliest time when the frog can jump to the other side of the river.
+
+If the frog is never able to jump to the other side of the river, the function should return −1.
+
+For example, given X = 5 and array A such that:
+
+  A[0] = 1
+  A[1] = 3
+  A[2] = 1
+  A[3] = 4
+  A[4] = 2
+  A[5] = 3
+  A[6] = 5
+  A[7] = 4
+the function should return 6, as explained above.
+
+Write an efficient algorithm for the following assumptions:
+
+N and X are integers within the range [1..100,000];
+each element of array A is an integer within the range [1..X].
+
+Solution - FrogRiverOne.py
