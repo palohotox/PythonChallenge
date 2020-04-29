@@ -147,7 +147,9 @@ each element of array A is an integer within the range [1..X].
 Solution - FrogRiverOne.py
 
 
-
 Challenge #5
+- add another python challenge
+library for workforce management
+calendar date-picker in Python
 
 
